@@ -4,16 +4,16 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='adaptivecardbuilder',
-    version='0.0.9',
-    description='Easily Build and Export Multilingual Adaptive Cards Through Python',
-    py_modules=['adaptivecardbuilder'],
-    package_dir={'': 'src'},
-    data_files = [("", ["LICENSE.txt"])],
-    url="https://github.com/ku222/AdaptiveCardBuilder",
-    author="Kovid Uppal",
-    author_email="kovid.uppal@gmail.com",
-    install_requires=['aiohttp'],
+    name="msteamsadaptivecardbuilder",
+    version="1.0.0",
+    description="Easily Build and Export Multilingual Adaptive Cards Through Python",
+    py_modules=["msteamsadaptivecardbuilder"],
+    package_dir={"": "src"},
+    data_files=[("", ["LICENSE.txt"])],
+    url="https://github.com/NandovdK/AdaptiveCardBuilder",
+    author="Nando van der Kant",
+    author_email="njvdkant@gmail.com",
+    install_requires=["aiohttp", "requests"],
     long_description=long_description,
     long_description_content_type="text/markdown",
     classifiers=[
@@ -24,6 +24,6 @@ setup(
         "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-        "Development Status :: 1 - Planning"
-    ]
+        "Development Status :: 1 - Planning",
+    ],
 )
