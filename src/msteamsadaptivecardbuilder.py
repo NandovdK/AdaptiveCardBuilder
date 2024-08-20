@@ -459,6 +459,7 @@ class AdaptiveCard:
         self.schema = schema
         self.version = version
         self.type = "AdaptiveCard"
+        self.msteams = {"width": "Full"}
         self.teams_webhook = teams_webhook
         self.body: List[AdaptiveObject] = []
         self.actions: List[AdaptiveObject] = []
